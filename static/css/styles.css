@@ -1,0 +1,108 @@
+	body {
+		height: 100%;
+        background-color: #ffffff;
+		background-image: url("images/overlay.png"), url("images/bcg.jpg");
+		background-image: url("images/overlay.png"), url("images/bcg.jpg");
+		background-image: url("images/overlay.png"), url("images/bcg.jpg");
+		background-image: url("images/overlay.png"), url("images/bcg.jpg");
+		background-repeat: repeat,			no-repeat,			no-repeat;
+		background-size: 100px 100px, cover,				cover;
+		background-position: top left,		center center,		bottom center;
+		background-attachment: fixed,			fixed,				fixed;
+	}
+
+		body:after {
+			content: '';
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: inherit;
+			opacity: 0;
+			z-index: 1;
+			background-color: #ffffff;
+			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-repeat: repeat,			no-repeat;
+			background-size: 100px 100px, cover;
+			background-position: top left,		center center;
+			-moz-transition: opacity 1.75s ease-out;
+			-webkit-transition: opacity 1.75s ease-out;
+			-ms-transition: opacity 1.75s ease-out;
+			transition: opacity 1.75s ease-out;
+		}
+
+		body.is-loading:after {
+			opacity: 1;
+		}
+body{
+ margin: 0;
+ font-family: 'Raleway', sans-serif;
+ -webkit-font-smoothing: antialiased;
+  color:#212121;
+}
+.wrapper{
+  position: relative;
+  clear:both;
+  margin: 0 auto 75px auto;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  /*background: #4e89ae;*/
+  height: 180px;
+}
+
+.top .title {
+  width: 700px;
+  margin: 38px auto 0 auto; 
+}
+
+.title h1 {
+  font-size:24px;
+  color:#FFF;
+  font-weight:500;
+}
+
+.content{
+    margin: -80px auto 100px;
+  padding-bottom: 20px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  padding:50px;
+  width: 600px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+}
+
+.card h2 {
+  font-size:21px;
+  font-weight:500;
+}
+
+.card h2 a {
+  color:#CC0000;
+  text-decoration:none;
+}
+
+.card .text {
+  color:#212121;
+  margin-top:20px;
+  font-size:15px;
+  line-height:22px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}

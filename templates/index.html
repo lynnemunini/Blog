@@ -12,12 +12,12 @@
         <div class="title"><h1>My Blog</h1></div>
     </div>
 
-    {% for post in posts: %}
+    {% for post in all_posts: %}
     <div class="content">
         <div class="card ">
             <h2>{{ post.title }}</h2>
             <p>{{ post.subtitle }}</p>
-            <a href="{{url_for('show_post', index=post.id)}}">Read</a>
+            <a href="{{ url_for('show_post', index=post.id) }}">Read</a>
         </div>
 
     </div>
@@ -26,6 +26,6 @@
 </div>
 </body>
 <footer>
-    <p>Made with ♥️ by Lynne.</p>
+    <p>Made with ♥️ in London.</p>
 </footer>
 </html>
